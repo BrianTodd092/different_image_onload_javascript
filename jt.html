@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+<img id="a" src="img1.png" alt="img1">
+<img id="b" src="img2.png" alt="img2">
+<img id="c" src="img3.png" alt="img3">
+<img id="d" src="img4.png" alt="img4">
+
+<!-- script located html document, external script delay loading image.-->
+
+<script>
+var time = new Date();
+
+var d = time.getHours();
+var greeting;
+
+document.getElementById('a').style.display = 'none';
+document.getElementById('b').style.display = 'none';
+document.getElementById('c').style.display = 'none';
+document.getElementById('d').style.display = 'none';
+
+
+ if (d > 18)  {
+     greeting = document.getElementById('a').style.display = 'block';
+}
+
+ else if (d > 12) {
+     greeting = document.getElementById('b').style.display = 'block';
+}
+ else if (d > 0) {
+     greeting = document.getElementById('c').style.display = 'block';
+}
+ 
+ else {
+       greeting = document.getElementById('d').style.display = 'block';
+}
+
+
+document.image(greeting);
+</script>
+
+
+</body>
+</html>
