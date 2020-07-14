@@ -6,29 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="onload different image javascript">
 <meta name="keywords" content="onload different image javascript">
- <style>
-#a {
-      position: relative;
-      left: 20%;
-      border-radius: 5px;
- }
-
-#b {
-      position: relative;
-      left: 20%;
-      border-radius: 5px;
- }
- #c {
-      position: relative;
-      left: 20%;
-      border-radius: 5px;
- }
- #d {
-      position: relative;
-      left: 20%;
-      border-radius: 5px;
- }
- </style>
+<link href="style.css" rel="stylesheet">
 </head>
 <body>
 <img id="a" src="img1.png" width="340" height="161" alt="img1">
@@ -36,38 +14,8 @@
 <img id="c" src="img3.png" width="340" height="161" alt="img3">
 <img id="d" src="img4.png" width="340" height="161" alt="img4">
 
-<!-- script located html document external script delay loading image.-->
-
-<script>
-var time = new Date();
-var d = time.getHours();
-var greeting;
-
-document.getElementById('a').style.display = 'none';
-document.getElementById('b').style.display = 'none';
-document.getElementById('c').style.display = 'none';
-document.getElementById('d').style.display = 'none';
 
 
- if (d > 18)  {
-     greeting = document.getElementById('a').style.display = 'block';
-}
-
- else if (d > 12) {
-     greeting = document.getElementById('b').style.display = 'block';
-}
- else if (d > 0) {
-     greeting = document.getElementById('c').style.display = 'block';
-}
- 
- else {
-       greeting = document.getElementById('d').style.display = 'block';
-}
-
-
-document.image = greeting;
-</script>
-
-
+ <script src="javascript.js"></script>
 </body>
 </html>
