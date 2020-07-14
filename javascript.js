@@ -2,10 +2,7 @@ var time = new Date();
 var d = time.getHours();
 var greeting;
 
-document.getElementById('a').style.display = 'none';
-document.getElementById('b').style.display = 'none';
-document.getElementById('c').style.display = 'none';
-document.getElementById('d').style.display = 'none';
+
 
 
  if (d > 18)  {
